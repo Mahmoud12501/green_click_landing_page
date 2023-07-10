@@ -8,6 +8,7 @@
     --white:#EFF7F5;
     --main-padding:4rem;
     --main-redius:7px;
+    --secondry-colr:#64953E;
 }
 /*
   1. Use a more-intuitive box-sizing model.
@@ -136,6 +137,7 @@ header .container .links{
     
 }
 header .container .links a{
+  text-transform: capitalize;
     font-size: 1.125rem;
     font-weight: var(--fw-regular);
     color: var(--white);
@@ -292,4 +294,79 @@ header .container .links a:hover{
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
 }
+.about .container h2{
+  color: var(--secondry-colr);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: var(--fw-regular);
+}
+.about .container p{
+  text-align: center;
+ font-size: 1.3rem;
+}
+.about .container .imges{
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
 /* end about */
+/*  start service */
+.services{
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.services .container>h2{
+  color: var(--secondry-colr);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: var(--fw-regular);
+}
+.services .container .service{
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.services .container .service .serv{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media(max-width:768px){
+.services .container .service .serv{
+  flex-direction: column;
+  text-align: center;
+}
+}
+.services .container .massage {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 55px;
+}
+@media(max-width:768px){
+  .services .container .massage{
+    flex-direction: column;
+    text-align: center;
+  }
+  }
+.services .container .massage .massage_content{
+  
+}
+.services .container .massage .massage_content h2{
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--secondry-colr);
+  margin-bottom: 1rem;
+  
+}
+.services .container .massage .massage_content p{
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+.services .container .massage .massage_img{
+  border-radius: var(--main-redius);
+}
+/* end services*/
